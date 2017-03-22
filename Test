@@ -1,0 +1,46 @@
+
+public class Test {
+	
+	public static void main(String[] args)
+	{
+		// 1 zadanie
+		punkt a=new punkt();
+		// 2 zadanie
+		punkt b=new punkt(3);
+		// 3 zadanie
+		b.prt_cor();
+		b.prt_mass();
+		b.prt_des();
+		b.prt_mbez();
+		b.prt_stn(3,0,0);
+		
+		a.prt_cor();
+		a.prt_mass();
+		a.prt_des();
+		a.prt_mbez();
+		a.prt_stn(3,0,0);
+		// 4 zadanie
+		b.set_mass(5);
+		// 5 zadanie
+		b.prt_cor();
+		b.prt_mass();
+		b.prt_des();
+		b.prt_stn(3,0,0);
+		// 6 zadanie
+		punkt pkty[]=new punkt[5];
+		
+		for (int i=0;i<5;i++){
+			pkty[i]=new punkt(i*2);
+			pkty[i].prt_mass();
+		}
+		// zadanie 7
+		for (int i=0;i<5;i++){
+			pkty[i].prt_cor();
+			pkty[i].prt_mass();
+			pkty[i].prt_des();
+			pkty[i].prt_mbez();
+			pkty[i].prt_stn(5,0,0);
+		}
+	}
+	
+}
