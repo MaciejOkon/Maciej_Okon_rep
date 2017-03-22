@@ -1,0 +1,46 @@
+//package src;
+//import java.util.Arrays;
+public class punkt {
+	// pola
+	public float x,y,z;
+	private float m;
+	// metody
+	void set_cor(float xz, float yz, float zz) {
+		x=xz;
+		y=yz;
+		z=zz;
+	}
+	void set_mass(float mz) {
+		m=mz;
+	}
+	void prt_mass() {
+		System.out.println("Masa punktu to " + m + ".");
+	}
+	void prt_cor() {
+		System.out.println("Wspolrzedne punktu to: (x,y,z)=(" + (int)x +","+ (int)y + "," + (int)z +")");
+	}
+	public void prt_des(){
+		System.out.println("Punkt materialny");
+	}
+	public void prt_mbez(){
+		System.out.println ("Glowny moment bezwladnosci to 0");
+	}
+	void prt_stn(float xz, float yz, float zz){
+		System.out.println("Wartosc momentu bezwladnosci wzgledem osi, ktorej najblizszy punkt to (" + (int)xz + "," + (int)yz + "," + (int)zz + ") wynosi " + (m*(xz*xz+yz*yz+zz*zz)));
+	}
+	// Konstruktory
+	public punkt(){
+		x=0;
+		y=0;
+		z=0;
+		m=1;
+	}
+	public punkt(float mz){
+		x=0;
+		y=0;
+		z=0;
+		m=mz;
+	}
+	public static void main(String[] args) {		
+	}
+}
